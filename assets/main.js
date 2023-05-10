@@ -141,3 +141,4 @@ btnCopiar.addEventListener("click", () => {
     }, 1500);
   }
 });
+document.getElementById("year").textContent = new Date().getFullYear();
