@@ -1,4 +1,5 @@
 # Encriptador-de-texto
+## Tecnologias usadas
 <div align="center">
     <img src="https://img.shields.io/badge/JavaScript-5A5A5A?logo=javascript&logoColor=yelllow"/>
     <img src="https://img.shields.io/badge/HTML-5A5A5A?logo=html5" />
