@@ -1,5 +1,5 @@
 # Encriptador-de-texto
-<a href="https://amed-dev.github.io/Encriptador-de-texto/" target="_blank" rel="noopener" >https://amed-dev.github.io/Encriptador-de-texto/</a>
+<a href="https://amed-dev.github.io/Encriptador-de-texto/" target="_blank" rel="noopener noreferrer" >https://amed-dev.github.io/Encriptador-de-texto/</a>
 ## Tecnologias usadas
 <div align="center">
     <img src="https://img.shields.io/badge/JavaScript-5A5A5A?logo=javascript&logoColor=yelllow"/>
