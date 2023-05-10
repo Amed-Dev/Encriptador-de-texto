@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/programacion.ico"
+      type="image/x-icon"
+    />
+    <title>Encriptar y desencriptar texto</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/Vectoralura.svg" alt="log-alura" class="l-alura" />
+    </header>
+    <main class="container">
+      <div class="container-entrada">
+        <textarea
+          type="text"
+          placeholder="Ingrese el texto aquí"
+          id="entrada"
+          required
+          autocapitalize="none"
+        ></textarea>
+        <div class="font-inter-s" id="msgalert">
+          <p>
+            <i class="fa-solid fa-circle-exclamation" id="exclamation"></i>
+            <span id="msg-!"> Solo letras minúsculas y sin acentos</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <button type="button" id="encriptar">
+            <span class="text font-nunito-l">Encriptar</span>
+            <span class="icon"> <i class="fa-solid fa-lock"></i></span>
+          </button>
+          <button type="button" id="desencriptar">
+            <span class="text font-nunito-l">Desencriptar</span>
+            <span class="icon"> <i class="fa-solid fa-unlock"></i></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-result">
+        <!--salida-->
+        <div class="msg_box" id="msg_box">
+          <img src="./assets/img/Muñeco.svg" alt="Sin_entrada" class="muñeco" />
+          <div class="message">
+            <p class="msg1 font-inter-l">Ningún mensaje fue encontrado</p>
+            <p class="msg2 font font-inter-m">
+              Ingresa el texto que desees encriptar o desencriptar
+            </p>
+          </div>
+        </div>
+        <div class="result_box" id="result_box">
+          <textarea
+            name="salida"
+            id="salida"
+            placeholder="Aquí se mostrará el resultado"
+          ></textarea>
+          <div class="font-inter-s" id="msg-copied"></div>
+          <button type="button" id="copy">
+            <span class="font-nunito-l">
+              Copiar <i class="fa-solid fa-clipboard-list"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>
+        Made by Amed Pereda Gomez | ©2023 <i class="fa-solid fa-code"></i>
+      </span>
+    </footer>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
