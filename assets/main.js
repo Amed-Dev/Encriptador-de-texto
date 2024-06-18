@@ -1,14 +1,15 @@
-let btnEncriptar = document.getElementById("encriptar");
-let btnDesencriptar = document.getElementById("desencriptar");
-let btnCopiar = document.getElementById("copy");
-let msgCopied = document.getElementById("msg-copied");
+const $ = (selector, context = document)=> context.querySelector(selector)
+let btnEncriptar = $("#encriptar");
+let btnDesencriptar = $("#desencriptar");
+let btnCopiar = $("#copy");
+let msgCopied = $("#msg-copied");
 
-const entrada = document.getElementById("entrada");
-const salida = document.getElementById("salida");
-const msg = document.getElementById("msg_box");
-const result = document.getElementById("result_box");
-const clipboardIcon = btnCopiar.querySelector("i");
-const errIcon = document.getElementById("exclamation");
+const entrada = $("#entrada");
+const salida = $("#salida");
+const msg = $("#msg_box");
+const result = $("#result_box");
+const clipboardIcon = $("i");
+const errIcon = $("#exclamation");
 
 entrada.addEventListener("input", () => {
   if (entrada.value.trim() !== "") {
@@ -131,14 +132,14 @@ btnCopiar.addEventListener("click", () => {
       clipboardIcon.classList.add("fa-clipboard-list");
       msgCopied.innerHTML = "";
       msgCopied.classList.remove("hecho");
-    }, 1500);
+    }, 2000);
   } else {
     msgCopied.innerHTML = "Nada para copiar 😢";
     msgCopied.classList.add("error");
     setTimeout(() => {
       msgCopied.innerHTML = "";
       msgCopied.classList.remove("error");
-    }, 1500);
+    }, 2000);
   }
 });
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent = "2023";
